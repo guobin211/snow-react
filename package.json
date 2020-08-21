@@ -4,7 +4,9 @@
     "build": "snowpack build",
     "test": "jest",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
+    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
+    "run:css": "postcss src/styles/index.scss --dir src/styles/ --ext css",
+    "run:css::watch": "$1 --watch"
   },
   "dependencies": {
     "react": "^16.13.1",
@@ -17,6 +19,10 @@
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "@types/snowpack-env": "^2.3.0",
+    "@csstools/postcss-sass": "^4.0.0",
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.1",
+    "postcss-scss": "^2.1.1",
     "jest": "^26.2.2",
     "prettier": "^2.0.5",
     "snowpack": "^2.8.0",
