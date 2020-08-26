@@ -1,1 +1,1 @@
-export { default as MButton } from './m-button.component';
+export { default as MButton } from './m-button.component'

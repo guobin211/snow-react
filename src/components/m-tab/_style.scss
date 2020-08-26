@@ -1,0 +1,28 @@
+.tab {
+	padding: 0;
+	margin: 0;
+	overflow-y: hidden;
+	overflow-x: auto;
+	height: 50px;
+	width: auto;
+	position: relative;
+	white-space: nowrap;
+	&:last-child{
+		padding-right: 0.2rem;
+	}
+	.tab_item {
+		list-style: outside none none;
+		display: inline-block;
+		text-align: center;
+		line-height: 0.42rem;
+		height: 0.42rem;
+		font-size: 0.16rem;
+		white-space: nowrap;
+		vertical-align: baseline;
+		margin-left: .2rem;
+
+		&.active {
+			color: #e02e24;
+		}
+	}
+}

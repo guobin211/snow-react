@@ -1,12 +1,21 @@
-import React from 'react';
-import { MButton } from './components';
+import React, { useState } from 'react'
+import { MButton } from './components'
+import { Home } from './pages/home'
 
 const App: React.FC = () => {
-  return (
-    <div className="app">
-      <MButton>Submit</MButton>
-    </div>
-  );
-};
+  const location = window.location.pathname
+  const [url, setUrl] = useState(location)
 
-export default App;
+  switch (url) {
+    case '/':
+      return (
+        <div className="app">
+          <Home />
+        </div>
+      )
+    default:
+      return <div className="app"></div>
+  }
+}
+
+export default App
