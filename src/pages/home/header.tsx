@@ -42,7 +42,7 @@ const Header: React.FC<HeaderProps> = (props) => {
     <div className="header">
       <div className="header_search">
         <div className="header_search_input">
-          <div className="header_search_input-wrap"></div>
+          <div className="header_search_input-wrap"/>
         </div>
       </div>
       <div className="header_tabs">

@@ -2,7 +2,7 @@ import React from 'react'
 import { getUUID } from '../hooks/utils'
 
 export interface AppContext {
-  uid: string
+  uid: Readonly<string>
 }
 
 const initContext: AppContext = {
